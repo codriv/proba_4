@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>26</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="/css\over_2.css">
+</head>
+
+<div id="varGomb">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-danger" onclick="console.log(rowDel(this))">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+
+<body>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary" onclick="createUsersDb()">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-9">
+                </table>
+                <table class="table" id="usersTable">
+                    <thead>
+                        <tr>
+                            <td scope="row">
+                                <input type="text" id="Nr" class="form-control" readonly maxlength="3" size="3" style="background-color: rgb(224, 224, 224); color: darkgray;">
+                            </th>
+                            <td>
+                                <!-- <input type="text" id="First" class="form-control" placeholder="First" onfocus='this.placeholder=""' onblur='this.placeholder="First"'> -->
+                                <input type="text" id="First" class="form-control" placeholder="First">
+                            </td>
+                            <td>
+                                <input type="text" id="Last" class="form-control" placeholder="Last">
+                            </td>
+                            <td>
+                                <input type="text" id="Handle" class="form-control" placeholder="Handle">
+                            </td>
+                            <td class="gombok" style="width: 50%">
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-primary" onclick="addRow()">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>First</th>
+                            <th>Last</th>
+                            <th>Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</body>
+<script src="js\addRow_12.js"></script>
+</html>
